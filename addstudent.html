@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add Student</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Add student page</h1>
-    <label for="">Student name</label>
-    <input type="text" placeholder="enter student name">
-    <br>
-    <label for="">Student roll no</label>
-    <input type="text" placeholder="enter student ROLL NO">
-    <br>
-    <label for="">Student branch</label>
-    <input type="text" placeholder="enter BRANCH">
-    <br>
-    <label for="">Student CGPA</label>
-    <input type="number" placeholder="enter cgpa" step="0.01" min="0" max="10">
-    <br>
 
-    <a href="viewstudent.html"><button>ADD STUDENT</button></a>
+    <h1>Add Student</h1>
 
+    <form action="viewstudent.html">
 
-    
+        <label>Student Name</label>
+        <input type="text" placeholder="Enter student name" required>
+
+        <label>Roll Number</label>
+        <input type="text" placeholder="Enter roll number" required>
+
+        <label>Branch</label>
+        <input type="text" placeholder="Enter branch" required>
+
+        <label>CGPA</label>
+        <input type="number" step="0.01" min="0" max="10" placeholder="Enter CGPA" required>
+
+        <button type="submit">Add Student</button>
+
+    </form>
+
 </body>
 </html>
